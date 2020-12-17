@@ -1,8 +1,9 @@
 import React from 'react'; 
-
+// import { Route } from 'react-router-dom';
 const { Route } = require('react-router-dom');
 
 function RouterOutlet(route) {
+  console.log(route);
   const render = (props) => {
     props.history.listen(() => {
       if (document && document.top !== false) {
