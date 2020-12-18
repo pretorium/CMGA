@@ -18,7 +18,7 @@ input::-webkit-inner-spin-button {
   html,
   body {
     max-width: 100vw;
-    // overflow-x: hidden;
+    scroll-behavior: smooth;
     font-family: Poppins-Regular, sans-serif;
     font-size: 16px;
     font-weight: normal;

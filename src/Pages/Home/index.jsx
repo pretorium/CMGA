@@ -1,11 +1,17 @@
-import './App.css';
+import './styles.js';
+import Header from '../../Components/Header';
+import { HomeContainer } from './styles';
+import Banner from './Sections/Banner';
+import AboutUs from './Sections/AboutUs';
 
-function App() {
+function Home() {
   return (
-    <>
-      Hola Mundo!
-    </>
+    <HomeContainer>
+      <Header />
+      <Banner />
+      <AboutUs />
+    </HomeContainer>
   );
 }
 
-export default App;
+export default Home;

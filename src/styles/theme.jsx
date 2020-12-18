@@ -2,24 +2,25 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
 const colors = {
-  primary: '#EB0A1E', // Intense red
-  secondary: '#FF2147', // Soft red
-  red: '#FF0000',
-  gray: '#F6F6F6', // Background gray
-  grayDark: '#DCDCDC',
-  grayThree: '#575E67',
-  grayFour: '#D4D4D4',
-  grayFive: '#9C9C9C',
-  graySix: '#E5E5E5',
-  grayStrong: '#646464',
+  wine: '#691717',
+  gold: '#BB993E',
+  beige: '#BAA97C',
   black: '#000000',
   white: '#FFFFFF',
+  gray: '#525656',
+  secondBlack: '#221F20',
+  yellow: '#F9C430',
+  red: '#cf0000',
 };
 
 const fonts = {
-  regular: 'Toyota-Regular, sans-serif',
-  medium: 'Toyota-Medium, sans-serif',
-  bold: 'Toyota-Bold, sans-serif',
+  spartanLight: 'Spartan-Light, sans-serif',
+  robotoRegular: 'Roboto-Regular, sans-serif',
+  spartanRegular: 'Spartan-Regular, sans-serif',
+  spartanMedium: 'Spartan-Medium, sans-serif',
+  spartanBold: 'Spartan-Bold, sans-serif',
+  spartanExtraBold: 'Spartan-ExtraBold, sans-serif',
+  spartanBlack: 'Spartan-Black, sans-serif',
 };
 
 const mateialBreakpoints = createMuiTheme({
