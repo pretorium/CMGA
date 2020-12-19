@@ -6,8 +6,8 @@ import { variant } from 'styled-system';
 export const Divider = styled(Grid)`
   ${css({
     left: '0',
-    top: ['-60px'],
-    height: ['60px'],
+    top: ['-51px', '-60px', '-60px', '-4.14vw'],
+    height: ['51px', '60px', '60px', '4.14vw'],
     width: '100%',
     position: 'absolute',
   })}
@@ -23,15 +23,15 @@ export const TransferenceContainer = styled(Grid)`
 export const ContentLeft = styled(Grid)`
   ${css({
     justifyContent: 'flex-end',
-    paddingTop: ['107px'],
+    paddingTop: ['90px', '107px', '107px', '7.38vw'],
   })}
 `;
 
 export const ContentRight = styled(Grid)`
   ${css({
-    justifyContent: 'flex-start',
-    paddingTop: ['107px'],
-    paddingBottom: ['70px'],
+    justifyContent: ['center', 'flex-start'],
+    paddingTop: ['45px', '107px', '107px', '7.38vw'],
+    paddingBottom: ['49px', '70px', '70px', '4.83vw'],
   })}
 `;
 
@@ -41,17 +41,17 @@ export const Text = styled.p`
     variants: {
       title: {
         color: props.theme.colors.wine,
-        fontSize: ['42px'],
+        fontSize: ['35px', '42px', '42px', '2.89vw'],
         fontWeight: '750',
         lineHeight: '1',
-        marginBottom: ['41px'],
+        paddingBottom: ['34px', '41px', '41px', '2.82vw'],
         fontFamily: props.theme.fonts.spartanRegular,
       },
       paragraph: {
         color: 'black',
-        fontSize: ['16px'],
+        fontSize: ['13px', '16px', '16px', '1.10vw'],
         fontWeight: '400',
-        lineHeight: ['24px'],
+        lineHeight: ['20px', '24px', '24px', '1.65vw'],
         fontFamily: props.theme.fonts.spartanRegular,
       },
     }
@@ -67,4 +67,9 @@ export const Span = styled.span`
       },
     }
   })}
+`;
+
+export const ContainerPartners = styled(Grid)`
+  background: #BAA97C;
+  text-align: center;
 `;

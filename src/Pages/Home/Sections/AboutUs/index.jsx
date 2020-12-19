@@ -17,7 +17,7 @@ const AboutUs = () => {
           </Grid>
         </ContentLeft>
         <ContentRight container item xs={12} md={6}>
-          <Grid item xs={11} md={9}>
+          <Grid item xs={10} md={9}>
             <Text styles="paragraph">
               Somos un grupo de profesionales y emprendedores que amamos al Club Universitario de
               Deportes y hemos constituido la Asociación Crema mi Gran Amigo para canalizar nuestro

@@ -7,7 +7,7 @@ const OurObjectives = () => {
     <OurObjectivesContainer container>
       <Divider id="objetivos" />
       <ContentLeft container item xs={12} md={6}>
-        <Grid item xs={11} md={9}>
+        <Grid item xs={10} md={9}>
           <Text styles="paragraph">
             Participar activamente en la junta de acreedores con la finalidad de aportar
             en el diseño de un plan a largo plazo, que nos permita afrontar con éxito el pago
@@ -23,7 +23,7 @@ const OurObjectives = () => {
         </Grid>
       </ContentLeft>
       <ContentRight container item xs={12} md={6}>
-          <Grid container item xs={11} md={9} justify="flex-end" alignContent="flex-start">
+          <Grid container item xs={10} md={9} justify="flex-end" alignContent="flex-start">
             <Grid>
               <Text styles="titleTop">NUESTROS</Text>
               <Text styles="titleBottom">OBJETIVOS</Text>

@@ -26,7 +26,7 @@ const Banner = () => {
         </Grid>
       </BannerLeft>
       <BannerRight container item xs={12} md={6}>
-        <Grid container item xs={11} md={7}>
+        <Grid container item xs={11} md={9}>
           <Grid item xs={12}>
             <Text styles="rightText">
               <Span styles="1">LA</Span> <Span styles="2">“U”</Span> <br />

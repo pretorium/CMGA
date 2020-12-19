@@ -6,10 +6,11 @@ import { variant } from 'styled-system';
 export const Divider = styled(Grid)`
   ${css({
     left: '0',
-    top: ['-60px'],
-    height: ['60px'],
+    top: ['-51px', '-60px', '-60px', '-4.14vw'],
+    height: ['51px', '60px', '60px', '4.14vw'],
     width: '100%',
     position: 'absolute',
+    order: 1,
   })}
 `;
 
@@ -22,16 +23,18 @@ export const OurObjectivesContainer = styled(Grid)`
 
 export const ContentLeft = styled(Grid)`
   ${css({
-    justifyContent: 'flex-end',
-    paddingTop: ['94px'],
-    paddingBottom: ['101px'],
+    justifyContent: ['center', 'flex-end'],
+    paddingTop: ['79px', '94px', '94px', '6.48vw'],
+    paddingBottom: ['85px', '101px', '101px', '6.96vw'],
+    order: [3, 2],
   })}
 `;
 
 export const ContentRight = styled(Grid)`
   ${css({
     justifyContent: 'flex-start',
-    paddingTop: ['92px'],
+    paddingTop: ['78px', '92px', '92px', '6.34vw'],
+    order: [2, 3],
   })}
 `;
 
@@ -41,7 +44,7 @@ export const Text = styled.p`
     variants: {
       titleTop: {
         color: props.theme.colors.white,
-        fontSize: ['46px'],
+        fontSize: ['39px', '46px', '46px', '3.17vw'],
         fontWeight: '600',
         lineHeight: '.9',
         marginBottom: '0',
@@ -49,16 +52,16 @@ export const Text = styled.p`
       },
       titleBottom: {
         color: props.theme.colors.gold,
-        fontSize: ['40px'],
+        fontSize: ['34px', '40px', '40px', '2.76vw'],
         fontWeight: '800',
         lineHeight: '.9',
         fontFamily: props.theme.fonts.spartanRegular,
       },
       paragraph: {
         color: 'white',
-        fontSize: ['16px'],
+        fontSize: ['13px', '16px', '16px', '1.10vw'],
         fontWeight: '200',
-        lineHeight: ['24px'],
+        lineHeight: ['20px', '24px', '24px', '1.65vw'],
         fontFamily: props.theme.fonts.spartanLight,
       },
     }
@@ -67,10 +70,10 @@ export const Text = styled.p`
 
 export const Points = styled.div`
   ${css({
-    width: ['224px'],
-    height: ['56px'],
-    marginTop: ['16px'],
-    marginRight: ['28px'],
+    width: ['190px', '224px', '224px', '15.45vw'],
+    height: ['47px', '56px', '56px', '3.86vw'],
+    marginTop: ['13px', '16px', '16px', '1.10vw'],
+    marginRight: ['23px', '28px', '28px', '1.93vw'],
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -97,8 +100,8 @@ export const BannerStadium = styled(Grid)`
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundImage: "url('/images/stadium.png')",
-    paddingTop: ['195px'],
-    paddingBottom: ['195px'],
+    paddingTop: ['165px', '195px', '195px', '13.45vw'],
+    paddingBottom: ['165px', '195px', '195px', '13.45vw'],
     justifyContent: 'center',
     ':before': {
       top: '0',

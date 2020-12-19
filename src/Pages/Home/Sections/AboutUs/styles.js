@@ -6,8 +6,8 @@ import { variant } from 'styled-system';
 export const Divider = styled(Grid)`
   ${css({
     left: '0',
-    top: ['-60px'],
-    height: ['60px'],
+    top: ['-51px', '-60px', '-60px', '-4.14vw'],
+    height: ['51px', '60px', '60px', '4.14vw'],
     width: '100%',
     position: 'absolute',
   })}
@@ -23,15 +23,15 @@ export const AboutUsContainer = styled(Grid)`
 export const ContentLeft = styled(Grid)`
   ${css({
     justifyContent: 'flex-end',
-    paddingTop: ['83px'],
+    paddingTop: ['70px', '83px', '83px', '5.7vw'],
   })}
 `;
 
 export const ContentRight = styled(Grid)`
   ${css({
-    justifyContent: 'flex-start',
-    paddingTop: ['70px'],
-    paddingBottom: ['70px'],
+    justifyContent: ['center', 'flex-start'],
+    paddingTop: ['49px', '70px', '70px', '4.83vw'],
+    paddingBottom: ['49px', '70px', '70px', '4.83vw'],
   })}
 `;
 
@@ -41,7 +41,7 @@ export const Text = styled.p`
     variants: {
       titleTop: {
         color: props.theme.colors.gold,
-        fontSize: ['42px'],
+        fontSize: ['35px', '42px', '42px', '2.89vw'],
         fontWeight: '400',
         lineHeight: '.9',
         marginBottom: '0',
@@ -49,23 +49,23 @@ export const Text = styled.p`
       },
       titleBottom: {
         color: props.theme.colors.wine,
-        fontSize: ['42px'],
+        fontSize: ['35px', '42px', '42px', '2.89vw'],
         fontWeight: '800',
         lineHeight: '.9',
         fontFamily: props.theme.fonts.spartanRegular,
       },
       paragraph: {
         color: 'black',
-        fontSize: ['16px'],
+        fontSize: ['13px', '16px', '16px', '1.10vw'],
         fontWeight: '400',
-        lineHeight: ['24px'],
+        lineHeight: ['20px', '24px', '24px', '1.65vw'],
         fontFamily: props.theme.fonts.spartanRegular,
       },
       stadiumText: {
         color: 'white',
         zIndex: '6',
         position: 'relative',
-        fontSize: ['48px'],
+        fontSize: ['40px', '48px', '48px', '3.31vw'],
         fontWeight: '350',
         lineHeight: '1',
         textAlign: 'center',
@@ -94,8 +94,8 @@ export const BannerStadium = styled(Grid)`
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundImage: "url('/images/stadium.png')",
-    paddingTop: ['195px'],
-    paddingBottom: ['195px'],
+    paddingTop: ['165px', '195px', '195px', '13.45vw'],
+    paddingBottom: ['165px', '195px', '195px', '13.45vw'],
     justifyContent: 'center',
     ':before': {
       top: '0',

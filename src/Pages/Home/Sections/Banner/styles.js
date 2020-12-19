@@ -5,8 +5,8 @@ import { variant } from 'styled-system';
 
 export const BannerContainer = styled(Grid)`
   ${css({
-    paddingTop: ['35px'],
-    paddingBottom: ['95px'],
+    paddingTop: ['35px', '35px', '35px', '2.41vw'],
+    paddingBottom: ['95px', '95px', '95px', '6.55vw'],
   })}
 `;
 
@@ -24,7 +24,7 @@ export const BannerLeft = styled(Grid)`
 export const BannerRight = styled(Grid)`
   ${css({
     alignItems: 'flex-start',
-    justifyContent: 'center',
+    justifyContent: ['center', 'flex-start'],
     div: {
       alignItems: 'flex-start',
       justifyContent: 'center',
@@ -35,12 +35,12 @@ export const BannerRight = styled(Grid)`
 export const Shield = styled.div`
   ${css({
     display: 'flex',
-    height: ['287px'],
-    width: ['302px'],
+    height: ['242px', '287px', '287px', '19.80vw'],
+    width: ['260px', '302px', '302px', '20.83vw'],
     justifyContent: 'center',
     alignItems: 'flex-start',
     backgroundSize: 'contain',
-    paddingTop: ['42px'],
+    paddingTop: ['35px', '42px', '42px', '2.89vw'],
     backgroundRepeat: 'no-repeat',
     backgroundImage: "url('/svg/shield.svg')",
   })}
@@ -53,42 +53,42 @@ export const Text = styled.p`
       number: {
         color: 'white',
         textAlign: 'center',
-        fontSize: ['120px'],
+        fontSize: ['100px', '120px', '120px', '8.28vw'],
         fontWeight: '750',
         lineHeight: '.8',
         fontFamily: props.theme.fonts.spartanRegular,
       },
       bottomNumber: {
         color: 'white',
-        fontSize: ['16px'],
+        fontSize: ['14px', '16px', '16px', '1.10vw'],
         fontWeight: '700',
         textAlign: 'center',
-        paddingTop: ['10px'],
+        paddingTop: ['8.5px', '10px', '10px', '0.69vw'],
         lineHeight: '1.15',
         fontFamily: props.theme.fonts.spartanRegular,
       },
       bottomText: {
         color: 'white',
-        fontSize: ['16px'],
+        fontSize: ['14px', '16px', '16px', '1.10vw'],
         fontWeight: '550',
         textAlign: 'center',
-        paddingTop: ['40px'],
-        paddingBottom: ['26px'],
+        paddingTop: ['34px', '40px', '40px', '2.76vw'],
+        paddingBottom: ['22px', '26px', '26px', '1.79vw'],
         fontFamily: props.theme.fonts.spartanRegular,
       },
       rightText: {
         color: 'white',
-        fontSize: ['48px'],
-        textAlign: 'right',
-        paddingTop: ['55px'],
+        fontSize: ['40px', '48px', '48px', '3.31vw'],
+        textAlign: ['center', 'right'],
+        paddingTop: ['46px', '55px', '55px', '3.79vw'],
         lineHeight: '1',
-        paddingBottom: ['48px'],
+        paddingBottom: ['40px', '48px', '48px' , '3.31vw'],
         fontFamily: props.theme.fonts.spartanRegular,
       },
       textLogo: {
         color: props.theme.colors.gold,
-        fontSize: ['24px'],
-        textAlign: 'left',
+        fontSize: ['20px', '24px', '24px', '1.65vw'],
+        textAlign: ['left'],
         lineHeight: '.9',
         fontFamily: props.theme.fonts.spartanRegular,
       },
@@ -104,57 +104,57 @@ export const Span = styled.span`
         color: 'white',
         lineHeight: '.8',
         fontWeight: '800',
-        fontSize: ['80px'],
+        fontSize: ['68px', '80px', '80px', '5.52vw'],
         whiteSpace: 'nowrap',
       },
       '2': {
         color: props.theme.colors.red,
         lineHeight: '.8',
         fontWeight: '800',
-        fontSize: ['80px'],
+        fontSize: ['68px', '80px', '80px', '5.52vw'],
         whiteSpace: 'nowrap',
       },
       '3': {
         color: 'white',
         lineHeight: '.8',
         fontWeight: '750',
-        fontSize: ['55px'],
+        fontSize: ['46px', '55px', '55px', '3.79vw'],
         whiteSpace: 'nowrap',
       },
       '4': {
         color: 'white',
         lineHeight: '.8',
         fontWeight: '500',
-        fontSize: ['50px'],
+        fontSize: ['42px', '50px', '50px', '3.34vw'],
         whiteSpace: 'nowrap',
       },
       '5': {
         color: props.theme.colors.red,
         lineHeight: '.8',
         fontWeight: '750',
-        fontSize: ['60px'],
+        fontSize: ['50px', '60px', '60px', '4.14vw'],
         whiteSpace: 'nowrap',
       },
       '6': {
         color: 'white',
         lineHeight: '.8',
         fontWeight: '500',
-        fontSize: ['50px'],
+        fontSize: ['42px', '50px', '50px', '3.34vw'],
         whiteSpace: 'nowrap',
       },
       'textLogo-top': {
         fontWeight: '200',
-        fontSize: ['22px'],
+        fontSize: ['18px', '22px', '22px', '1.51vw'],
         whiteSpace: 'nowrap',
       },
       'textLogo-mid': {
         fontWeight: '750',
-        fontSize: ['40px'],
+        fontSize: ['34px', '40px', '40px', '2.76vw'],
         whiteSpace: 'nowrap',
       },
       'textLogo-bottom': {
         fontWeight: '800',
-        fontSize: ['17px'],
+        fontSize: ['14px', '17px', '17px', '1.17vw'],
         whiteSpace: 'nowrap',
       },
     }
@@ -170,9 +170,9 @@ export const LogoContainer = styled(Grid)`
 
 export const Logo = styled.div`
   ${css({
-    height: ['91px'],
-    width: ['115px'],
-    marginRight: ['18px'],
+    height: ['77px', '91px', '91px', '6.27vw'],
+    width: ['97px', '115px', '115px', '7.93vw'],
+    marginRight: ['15px', '18px', '18px', '1.24vw'],
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     backgroundImage: "url('/svg/logo.svg')",

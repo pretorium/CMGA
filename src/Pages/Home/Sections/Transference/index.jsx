@@ -1,8 +1,9 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
+import Button from '../../Components/button.jsx';
 import { 
   TransferenceContainer, ContentLeft, Divider,
-  ContentRight, Text,
+  ContentRight, Text, ContainerPartners,
 } from './styles';
 
 const Transference = () => {
@@ -13,10 +14,24 @@ const Transference = () => {
         <ContentLeft container item xs={12} md={6}>
           <Grid item xs={11} md={9}>
             <Text styles="title">TRANSFERENCIA</Text>
+            <Grid>
+              <Button 
+                styles="white"
+                // loading
+              >
+                DESCARGAR<br/>ESTATUTO
+              </Button>
+              <Button 
+                styles="gold"
+                // loading
+              >
+                EQUIPO<br/>REPRESENTATIVO
+              </Button>
+            </Grid>
           </Grid>
         </ContentLeft>
         <ContentRight container item xs={12} md={6}>
-          <Grid item xs={11} md={9}>
+          <Grid item xs={10} md={9}>
             <Text styles="paragraph">
               El pilar fundamental de nuestra asociación es colocar al Club  Universitario de 
               Deportes en el sitial que siempre debe estar, una institución líder en sudamérica
@@ -32,6 +47,9 @@ const Transference = () => {
           </Grid>
         </ContentRight>
       </TransferenceContainer>
+      <ContainerPartners>
+        ASOCIADOS ACTIVOS
+      </ContainerPartners>
     </>
   );
 };

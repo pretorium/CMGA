@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import styled from 'styled-components';
 import css from '@styled-system/css';
 
@@ -6,15 +7,10 @@ export const HeaderContainer = styled.div`
     top: '0',
     zIndex: '100',
     width: '100%',
-    height: ['60px'],
+    height: ['51px', '60px', '60px', '4.14vw'],
     display: 'flex',
     position: 'sticky',
     justifyContent: 'flex-end',
-    ':hover': {
-      div: {
-        minHeight: '100%',
-      },
-    },
   })}
 `;
 
@@ -23,7 +19,7 @@ export const Overlay = styled.div`
     top: '0',
     zIndex: '9',
     width: '100%',
-    minHeight: '0',
+    minHeight: props.active ? '100%' : '0',
     position: 'absolute',
     transition: 'min-height .5s',
     backgroundPosition: 'top center',
@@ -38,23 +34,18 @@ export const ListOptions = styled.ul`
     zIndex: '10',
     display: 'flex',
     alignItems: 'center',
-    paddingRight: ['171px'],
+    paddingRight: ['0', '171px', '171px', '11.79vw'],
   })}
 `;
 
 export const Option = styled.li`
   ${(props) => css({
     a: {
-      color: 'white',
-      fontSize: ['14px'],
-      paddingRight: ['20px'],
+      color: props.active ? props.theme.colors.gold : 'white',
+      fontSize: props.active ? ['12px', '15px', '15px', '1.03vw'] : ['11px', '14px', '14px', '0.96vw'],
+      paddingRight: ['17px', '20px', '20px', '1.38vw'],
       fontFamily: props.theme.fonts.robotoRegular,
       transition: 'font-size .1s',
-      ':hover': {
-        fontSize: ['15px'],
-        color: props.theme.colors.gold,
-      },
     },
   })}
 `;
-

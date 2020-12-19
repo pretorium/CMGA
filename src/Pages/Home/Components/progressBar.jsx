@@ -7,8 +7,8 @@ import { variant } from 'styled-system';
 const Container = styled(Grid)`
   ${css({
     backgroundColor: 'white',
-    borderRadius: ['8px'],
-    padding: ['27px 16px'],
+    borderRadius: ['6.8px', '8px', '8px', '0.55vw'],
+    padding: ['22px 13px', '27px 16px', '27px 16px', '1.86vw 1.10vw'],
     width: 'fit-content',
   })}
 `;
@@ -20,30 +20,30 @@ const Text = styled.p`
       textTop: {
         color: 'black',
         textAlign: 'center',
-        fontSize: ['16px'],
+        fontSize: ['13px', '16px', '16px', '1.10vw'],
         fontWeight: '600',
         lineHeight: '1',
         whiteSpace: 'nowrap',
-        paddingBottom: ['19px'],
+        paddingBottom: ['16px', '19px', '19px', '1.31vw'],
         fontFamily: props.theme.fonts.spartanRegular,
       },
       textBottomLeft: {
         color: props.theme.colors.yellow,
         textAlign: 'left',
-        fontSize: ['18px'],
+        fontSize: ['15px', '18px', '18px', '1.24vw'],
         fontWeight: '750',
         lineHeight: '1',
-        paddingTop: ['15px'],
+        paddingTop: ['12px', '15px', '15px', '1.03vw'],
         whiteSpace: 'nowrap',
         fontFamily: props.theme.fonts.spartanRegular,
       },
       textBottomRight: {
         color: props.theme.colors.gray,
         textAlign: 'right',
-        fontSize: ['18px'],
+        fontSize: ['15px', '18px', '18px', '1.24vw'],
         fontWeight: '750',
         lineHeight: '1',
-        paddingTop: ['15px'],
+        paddingTop: ['12px', '15px', '15px', '1.03vw'],
         whiteSpace: 'nowrap',
         fontFamily: props.theme.fonts.spartanRegular,
       },
@@ -58,8 +58,8 @@ const Bar = styled.p`
     variants: {
       container: {
         width: '100%',
-        height: ['24px'],
-        borderRadius: ['24px'],
+        height: ['20px', '24px', '24px', '1.65vw'],
+        borderRadius: ['20px', '24px', '24px', '1.65vw'],
         margin: '0',
         backgroundColor: props.theme.colors.gray,
       },
@@ -67,9 +67,9 @@ const Bar = styled.p`
         top: '0',
         left: '0',
         width: '50%',
-        height: ['24px'],
+        height: ['20px', '24px', '24px', '1.65vw'],
         position: 'absolute',
-        borderRadius: ['24px'],
+        borderRadius: ['20px', '24px', '24px', '1.65vw'],
         background: 'linear-gradient(90deg, #EE8326 -55.16%, #F08D28 -25.56%, #F4A82C 24.55%, #F9C430 68.07%)',
       },
     }
