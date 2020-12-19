@@ -4,6 +4,7 @@ import css from '@styled-system/css';
 export const HeaderContainer = styled.div`
   ${css({
     top: '0',
+    zIndex: '100',
     width: '100%',
     height: ['60px'],
     display: 'flex',
@@ -25,7 +26,10 @@ export const Overlay = styled.div`
     minHeight: '0',
     position: 'absolute',
     transition: 'min-height .5s',
-    backgroundColor: props.theme.colors.wine,
+    backgroundPosition: 'top center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundImage: "url('/images/banner.jpg')",
   })}
 `;
 
@@ -48,7 +52,7 @@ export const Option = styled.li`
       transition: 'font-size .1s',
       ':hover': {
         fontSize: ['15px'],
-        color: '#cfcec6',
+        color: props.theme.colors.gold,
       },
     },
   })}

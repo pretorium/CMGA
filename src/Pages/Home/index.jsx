@@ -3,6 +3,8 @@ import Header from '../../Components/Header';
 import { HomeContainer } from './styles';
 import Banner from './Sections/Banner';
 import AboutUs from './Sections/AboutUs';
+import OurObjectives from './Sections/OurObjectives';
+import Transference from './Sections/Transference';
 
 function Home() {
   return (
@@ -10,6 +12,8 @@ function Home() {
       <Header />
       <Banner />
       <AboutUs />
+      <OurObjectives />
+      <Transference />
     </HomeContainer>
   );
 }
