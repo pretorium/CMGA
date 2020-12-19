@@ -19,20 +19,20 @@ export const Overlay = styled.div`
     top: '0',
     zIndex: '9',
     width: '100%',
-    minHeight: props.active ? '100%' : '0',
+    minHeight: ['100%', props.active ? '100%' : '0'],
     position: 'absolute',
     transition: 'min-height .5s',
     backgroundPosition: 'top center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    backgroundImage: "url('/images/banner.jpg')",
+    background: [props.theme.colors.black, "url('/images/banner.jpg')"],
   })}
 `;
 
 export const ListOptions = styled.ul`
   ${css({
     zIndex: '10',
-    display: 'flex',
+    display: ['none', 'flex'],
     alignItems: 'center',
     paddingRight: ['0', '171px', '171px', '11.79vw'],
   })}

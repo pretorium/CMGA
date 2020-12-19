@@ -5,7 +5,7 @@ import { variant } from 'styled-system';
 
 export const BannerContainer = styled(Grid)`
   ${css({
-    paddingTop: ['35px', '35px', '35px', '2.41vw'],
+    paddingTop: ['60px', '35px', '35px', '2.41vw'],
     paddingBottom: ['95px', '95px', '95px', '6.55vw'],
   })}
 `;

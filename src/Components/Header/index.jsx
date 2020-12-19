@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { HeaderContainer, ListOptions, Option, Overlay } from './styles';
+import ButtonCollapse from './Components/ButtonColapse';
 
 const sections = [
   {
@@ -77,6 +78,7 @@ const Header = () => {
           </Option>
         ))}
       </ListOptions>
+      <ButtonCollapse sections={sections} handleActivate={handleActivate}/>
     </HeaderContainer>
   );
 };
