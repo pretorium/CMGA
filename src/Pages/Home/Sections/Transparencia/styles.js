@@ -54,6 +54,15 @@ export const Text = styled.p`
         lineHeight: ['20px', '24px', '24px', '1.65vw'],
         fontFamily: props.theme.fonts.spartanRegular,
       },
+      textSlider: {
+        color: props.theme.colors.white,
+        fontSize: ['34px', '40px', '40px', '2.76vw'],
+        fontWeight: '200',
+        lineHeight: '1',
+        position: 'relative',
+        zIndex: 11,
+        fontFamily: props.theme.fonts.spartanLight,
+      },
     }
   })}
 `;
@@ -69,7 +78,69 @@ export const Span = styled.span`
   })}
 `;
 
-export const ContainerPartners = styled(Grid)`
-  background: #BAA97C;
-  text-align: center;
+export const ContainerPartners = styled.div`
+  ${css({
+    background: '#BAA97C',
+    height: ['240px', '240px', '240px', '16.56vw'],
+    maxWidth: '100%',
+    overflow: 'hidden',
+    zIndex: '10',
+    position: 'relative',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent:'center',
+    transform: 'translate3d(0, 0, 0)',
+  })}
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+
+  animation: moveSlideshow 12s linear infinite;
+
+  @keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-100%);  
+  }
+}
+`;
+
+export const Column = styled.div`
+  flex: 0 0 auto;
+`;
+
+export const Partner = styled.div`
+  ${css({
+    width: ['80px', '80px', '80px', '5.52vw'],
+    height: ['80px', '80px', '80px', '5.52vw'],
+  })}
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background-size: cover;
+  background-image: url(${props => props.img});
+
+  :after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-color: #BAA97C;
+    opacity: .6;
+    z-index: 2;
+    transition: opacity .3s;
+  }
+  :hover {
+    :after {
+      opacity: 0;
+    }
+  }
 `;

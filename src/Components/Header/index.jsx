@@ -13,7 +13,7 @@ const sections = [
   },
   {
     label: 'TRANSPARENCIA',
-    link: '#transferencia'
+    link: '#transparencia'
   },
   {
     label: 'CÓMO PARTICIPAR',
@@ -28,6 +28,7 @@ const sections = [
 const Header = () => {
   const [sectionsPosition, setSectionsPosition] = useState({})
   const [windowTopPosition, setWindowTopPosition] = useState(0);
+  const [resize, setResize] = useState(0);
 
   const getSectionsPosition = () => {
     const arrayPositions = {};
@@ -49,10 +50,12 @@ const Header = () => {
   useEffect(() => {
     getSectionsPosition();
     window.addEventListener('scroll', onScroll);
+    window.addEventListener('resize', () => setResize(window.innerWidth));
     return function cleanupListener() {
-      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('scroll', onScroll);
+      window.addEventListener('resize', () => setResize(window.innerWidth));
     };
-  }, []);
+  }, [resize]);
 
   const handleActivate = (idSection) => {
     if (sectionsPosition[idSection]) {
@@ -70,8 +73,8 @@ const Header = () => {
         && windowTopPosition >= sectionsPosition['quienes-somos'].distanceToTop
       } />
       <ListOptions>
-        {sections.map((e) => (
-          <Option active={handleActivate(e.link.substring(1))}>
+        {sections.map((e, i) => (
+          <Option key={i} active={handleActivate(e.link.substring(1))}>
             <a href={e.link}>
               {e.label}
             </a>

@@ -22,8 +22,8 @@ const ButtonCollapse = (props) => {
       </HamburgerButton>
       <NavRight open={open}>
         <NavElements>
-          {sections.map((e) => (
-            <Option active={handleActivate(e.link.substring(1))} open={open}>
+          {sections.map((e, i) => (
+            <Option key={i} active={handleActivate(e.link.substring(1))} open={open}>
               <a href={e.link} onClick={handleButtonClick}>
                 {e.label}
               </a>

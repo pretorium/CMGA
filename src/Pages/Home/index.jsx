@@ -5,7 +5,7 @@ import { HomeContainer } from './styles';
 import Banner from './Sections/Banner';
 import AboutUs from './Sections/AboutUs';
 import OurObjectives from './Sections/OurObjectives';
-import Transference from './Sections/Transference';
+import Transparencia from './Sections/Transparencia';
 import TakePart from './Sections/TakePart';
 import ContactUs from './Sections/ContactUs';
 
@@ -16,7 +16,7 @@ const Home = () => {
       <Banner />
       <AboutUs />
       <OurObjectives />
-      <Transference />
+      <Transparencia />
       <TakePart />
       <ContactUs />
     </HomeContainer>
