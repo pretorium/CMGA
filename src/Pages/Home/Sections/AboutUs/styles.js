@@ -40,24 +40,19 @@ export const Text = styled.p`
     prop: 'styles',
     variants: {
       titleTop: {
-        color: props.theme.colors.gold,
+        color: props.theme.colors.beige,
         fontSize: ['35px', '42px', '42px', '2.89vw'],
-        fontWeight: '400',
-        lineHeight: '.9',
         marginBottom: '0',
-        fontFamily: props.theme.fonts.spartanRegular,
+        fontFamily: props.theme.fonts.spartanBold,
       },
       titleBottom: {
         color: props.theme.colors.wine,
         fontSize: ['35px', '42px', '42px', '2.89vw'],
-        fontWeight: '800',
-        lineHeight: '.9',
-        fontFamily: props.theme.fonts.spartanRegular,
+        fontFamily: props.theme.fonts.spartanBlack,
       },
       paragraph: {
         color: 'black',
         fontSize: ['13px', '16px', '16px', '1.10vw'],
-        fontWeight: '400',
         lineHeight: ['20px', '24px', '24px', '1.65vw'],
         fontFamily: props.theme.fonts.spartanRegular,
       },
@@ -66,10 +61,8 @@ export const Text = styled.p`
         zIndex: '6',
         position: 'relative',
         fontSize: ['40px', '48px', '48px', '3.31vw'],
-        fontWeight: '350',
-        lineHeight: '1',
         textAlign: 'center',
-        fontFamily: props.theme.fonts.spartanRegular,
+        fontFamily: props.theme.fonts.spartanMedium,
       },
     }
   })}
@@ -80,7 +73,7 @@ export const Span = styled.span`
     prop: 'styles',
     variants: {
       'spanStadium': {
-        fontWeight: '750',
+        fontFamily: props.theme.fonts.spartanBold,
       },
     }
   })}

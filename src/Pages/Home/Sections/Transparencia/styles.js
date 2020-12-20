@@ -42,25 +42,21 @@ export const Text = styled.p`
       title: {
         color: props.theme.colors.wine,
         fontSize: ['35px', '42px', '42px', '2.89vw'],
-        fontWeight: '750',
-        lineHeight: '1',
         paddingBottom: ['34px', '41px', '41px', '2.82vw'],
-        fontFamily: props.theme.fonts.spartanRegular,
+        fontFamily: props.theme.fonts.spartanBold,
       },
       paragraph: {
         color: 'black',
         fontSize: ['13px', '16px', '16px', '1.10vw'],
-        fontWeight: '400',
         lineHeight: ['20px', '24px', '24px', '1.65vw'],
         fontFamily: props.theme.fonts.spartanRegular,
       },
       textSlider: {
         color: props.theme.colors.white,
         fontSize: ['34px', '40px', '40px', '2.76vw'],
-        fontWeight: '200',
-        lineHeight: '1',
         position: 'relative',
         zIndex: 11,
+        textAlign: 'center',
         fontFamily: props.theme.fonts.spartanLight,
       },
     }

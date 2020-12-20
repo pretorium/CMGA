@@ -48,20 +48,18 @@ export const Text = styled.p`
       title: {
         color: props.theme.colors.gold,
         fontSize: ['30px', '36px', '36px', '2.48vw'],
-        fontWeight: '600',
         lineHeight: '1',
         textAlign: 'center',
         paddingBottom: ['25px', '27px', '27px', '1.86vw'],
-        fontFamily: props.theme.fonts.spartanRegular,
+        fontFamily: props.theme.fonts.spartanBold,
       },
       paragraph: {
         color: 'white',
         fontSize: ['13px', '16px', '16px', '1.10vw'],
-        fontWeight: '200',
         textAlign: 'center',
         lineHeight: ['15.23px', '17,92px', '17,92px', '1.23vw'],
         paddingBottom: ['32px', '38px', '38px', '2.62vw'],
-        fontFamily: props.theme.fonts.spartanRegular,
+        fontFamily: props.theme.fonts.spartanLight,
       },
     }
   })}
@@ -82,7 +80,6 @@ export const Button = styled.button`
   ${(props) => css({
     color: 'white',
     width: ['207px', '244px', '244px', '16.83vw'],
-    fontWeight: '600',
     background: '#BB993E',
     border: ['1.5px solid #BB993E', '1.5px solid #BB993E', '1.5px solid #BB993E', '0.103vw solid #BB993E'],
     borderRadius: ['6px', '8px', '8px', '0.55vw'],
@@ -98,7 +95,7 @@ export const Label = styled.label`
     color: 'white',
     fontSize: ['13px', '16px', '16px', '1.10vw'],
     lineHeight: ['15px', '18px', '18px', '1.24vw'],
-    fontFamily: props.theme.fonts.spartanRegular,
+    fontFamily: props.theme.fonts.spartanLight,
   })}
 `;
 
@@ -127,7 +124,7 @@ export const TextArea = styled.textarea`
   ${(props) => css({
     height: ['127px', '150px', '150px', '10.35vw'],
     width: '100%',
-    padding: ['0 8px', '0 10px', '0 10px', '0 .69vw'],
+    padding: ['8px', '10px', '10px', '.69vw'],
     background: '#F7F7F7',
     borderRadius: ['8px', '10px', '10px', '0.69vw'],
     border: ['1px solid #DBDCE8', '1px solid #DBDCE8', '1px solid #DBDCE8', '0.069vw solid #DBDCE8'],

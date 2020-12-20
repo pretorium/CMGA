@@ -68,17 +68,15 @@ export const Text = styled.p`
       title: {
         color: props.theme.colors.wine,
         fontSize: ['40px', '48px', '48px', '3.31vw'],
-        fontWeight: '800',
-        lineHeight: '1',
         textAlign: 'right',
         paddingBottom: ['17px', '20px', '20px', '1.38vw'],
         marginBottom: '0',
-        fontFamily: props.theme.fonts.spartanRegular,
+        lineHeight: '1',
+        fontFamily: props.theme.fonts.spartanExtraBold,
       },
       paragraphTopLeft: {
         color: 'black',
         fontSize: ['13px', '16px', '16px', '1.10vw'],
-        fontWeight: '400',
         lineHeight: ['20px', '24px', '24px', '1.65vw'],
         textAlign: 'center',
         paddingBottom: ['44px', '52px', '52px', '3.58vw'],
@@ -87,16 +85,14 @@ export const Text = styled.p`
       accounts: {
         color: 'black',
         fontSize: ['13px', '16px', '16px', '1.10vw'],
-        fontWeight: '500',
         lineHeight: ['20px', '24px', '24px', '1.65vw'],
         textAlign: 'center',
         marginBottom: '0',
-        fontFamily: props.theme.fonts.spartanRegular,
+        fontFamily: props.theme.fonts.spartanMedium,
       },
       paragraphMiddle: {
         color: 'black',
         fontSize: ['13px', '16px', '16px', '1.10vw'],
-        fontWeight: '400',
         lineHeight: ['20px', '24px', '24px', '1.65vw'],
         textAlign: 'right',
         paddingBottom: ['39px', '46px', '46px', '3.17vw'],
@@ -111,8 +107,8 @@ export const Span = styled.span`
     prop: 'styles',
     variants: {
       'spanTitle': {
-        fontWeight: '600',
         color: props.theme.colors.beige,
+        fontFamily: props.theme.fonts.spartanBold,
       },
     }
   })}

@@ -25,7 +25,8 @@ export const Overlay = styled.div`
     backgroundPosition: 'top center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    background: [props.theme.colors.black, "url('/images/banner.jpg')"],
+    // background: [props.theme.colors.black, "url('/images/banner.jpg')"],
+    background: [props.theme.colors.black],
   })}
 `;
 

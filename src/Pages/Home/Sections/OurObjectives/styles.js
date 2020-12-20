@@ -45,22 +45,17 @@ export const Text = styled.p`
       titleTop: {
         color: props.theme.colors.white,
         fontSize: ['39px', '46px', '46px', '3.17vw'],
-        fontWeight: '600',
-        lineHeight: '.9',
         marginBottom: '0',
-        fontFamily: props.theme.fonts.spartanRegular,
+        fontFamily: props.theme.fonts.bold,
       },
       titleBottom: {
         color: props.theme.colors.gold,
-        fontSize: ['34px', '40px', '40px', '2.76vw'],
-        fontWeight: '800',
-        lineHeight: '.9',
-        fontFamily: props.theme.fonts.spartanRegular,
+        fontSize: ['35px', '42px', '42px', '2.89vw'],
+        fontFamily: props.theme.fonts.spartanExtraBold,
       },
       paragraph: {
         color: 'white',
         fontSize: ['13px', '16px', '16px', '1.10vw'],
-        fontWeight: '200',
         lineHeight: ['20px', '24px', '24px', '1.65vw'],
         fontFamily: props.theme.fonts.spartanLight,
       },
@@ -78,17 +73,6 @@ export const Points = styled.div`
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundImage: "url('/svg/points.svg')",
-  })}
-`;
-
-export const Span = styled.span`
-  ${(props) => variant({
-    prop: 'styles',
-    variants: {
-      'spanStadium': {
-        fontWeight: '750',
-      },
-    }
   })}
 `;
 

@@ -73,7 +73,6 @@ const Content = styled.div`
   text-align: left;
   ${(props) => css({
     fontSize: ['10px', '12px', '12px', '0.82vw',],
-    fontWeight: '700',
     fontFamily: props.theme.fonts.robotoRegular,
   })}
 `;
